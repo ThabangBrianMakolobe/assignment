@@ -1,0 +1,327 @@
+body{
+				background-color: #000;
+				position: relative;
+				margin: 10px;
+			}
+			header{
+				background-image: url("logo.jpg");
+				background-size: cover;
+				background-position: center;
+				height: 300px;
+				position: relative;
+			}
+			
+			header .language,header .search,header.login-signup {
+			  position: absolute;
+			  top: 50%;
+			  transform: translateY(-50%);
+			}
+    
+			header .language {
+			  right: 20px;
+			  color: #fff;
+			  background-color: rgba(255, 255, 255, 0.8);
+			  padding: 10px 20px;
+			  border-radius: 20px;
+			  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+			}
+    
+	
+	
+			header .search {
+			  right: 150px;
+			  background-color: #fff;
+			  padding: 5px;
+			  border-radius: 20px;
+			}
+			
+			header .search input[type="text"] {
+			  width: 200px;
+			  padding: 5px;
+			  border: none;
+			  border-radius: 20px;
+			}
+    
+			header .search button[type="submit"] {
+			  background-color: #333;
+			  color: #fff;
+			  border: none;
+			  padding: 5px 10px;
+			  border-radius: 20px;
+			  margin-left: 5px;
+			}
+			
+			header .login-signup {
+			  float: right; 
+			}
+			
+			header .login-signup a {
+			  color: #fff;
+			  text-decoration: none;
+			  margin-right: 5px;
+			}
+			
+			header .login-signup button {
+			  background-color: #fff;
+			  color: #000;
+			  border: none;
+			  padding: 5px 10px;
+			  border-radius: 20px;
+			}
+			
+			
+			/* Menu Dropdown */
+			  .cf:before,
+			  .cf:after {
+				  content: " ";
+				  display: table;
+			  }
+
+			  .cf:after {
+				  clear: both;
+			  }
+
+			  .cf {
+				  *zoom: 1;
+			  }
+
+			  .menu,
+			  .submenu {
+			   margin: 0;
+			   padding: 0;
+			   list-style: none;
+			  }
+
+			  .menu {   
+			   margin: 50px auto;
+			   width: 800px;   
+			   width: -moz-fit-content;
+			   width: -webkit-fit-content;
+			   width: fit-content; 
+			  }
+
+			  .menu > li {
+			   background: #000;
+			   float: left;
+			   position: relative;
+			   transform: skewX(25deg);
+			  }
+
+			  .menu a {
+			   display: block;
+			   color: #fff;
+			   text-transform: uppercase;
+			   text-decoration: none;
+			   font-family: Arial, Helvetica;
+			   font-size: 14px;
+			  }  
+
+			  .menu li:hover {
+			   background: #e74c3c;
+			  }  
+
+			  .menu > li > a {
+			   transform: skewX(-25deg);
+			   padding: 1em 2em;
+			  }
+
+			  /* Dropdown */
+			  .submenu {
+			   position: absolute;
+			   width: 200px;
+			   left: 50%; margin-left: -100px;
+			   transform: skewX(-25deg);
+			   transform-origin: left top;
+			   z-index: 1;
+			  }
+
+			  .submenu li {
+			   background-color: #34495e;
+			   position: relative;
+			   overflow: hidden;  
+			  }      
+
+			  .submenu > li > a {
+			   padding: 1em 2em;   
+			  }
+
+			  .submenu > li::after {
+			   content: '';
+			   position: absolute;
+			   top: -125%;
+			   height: 100%;
+			   width: 100%;   
+			   box-shadow: 0 0 50px rgba(0, 0, 0, .9);   
+			  }  
+
+			  .submenu > li:nth-child(odd){
+			   transform: skewX(-25deg) translateX(0);
+			  }
+
+			  .submenu > li:nth-child(odd) > a {
+			   transform: skewX(25deg);
+			  }
+
+			  .submenu > li:nth-child(odd)::after {
+			   right: -50%;
+			   transform: skewX(-25deg) rotate(3deg);
+			  }    
+
+			  .submenu > li:nth-child(even){
+			   transform: skewX(25deg) translateX(0);
+			  }
+
+			  .submenu > li:nth-child(even) > a {
+			   transform: skewX(-25deg);
+			  }
+
+			  .submenu > li:nth-child(even)::after {
+			   left: -50%;
+			   transform: skewX(25deg) rotate(3deg);
+			  }
+
+			  /* Show dropdown */
+			  .submenu,
+			  .submenu li {
+			   opacity: 0;
+			   visibility: hidden;   
+			  }
+
+			  .submenu li {
+			   transition: .2s ease transform;
+			  }
+
+			  .menu > li:hover .submenu,
+			  .menu > li:hover .submenu li {
+			   opacity: 1;
+			   visibility: visible;
+			  }  
+
+			  .menu > li:hover .submenu li:nth-child(even){
+			   transform: skewX(25deg) translateX(15px);   
+			  }
+
+			  .menu > li:hover .submenu li:nth-child(odd){
+			   transform: skewX(-25deg) translateX(-15px);   
+			  }
+			
+			h1 {
+				font-size: 35px;
+				color: #FFF;
+				margin-left: 20px;
+			}
+			
+			
+			#breadcrumb {
+			  margin-bottom: 20px;
+			}
+
+			#breadcrumb a {
+			  color: #999;
+			  text-decoration: none;
+			}
+
+			#breadcrumb a:hover {
+			  text-decoration: underline;
+			}
+
+			#breadcrumb .current {
+			  color: #333;
+			  font-weight: bold;
+			}
+
+			
+			/* Reset some default styles */
+			ul {
+			  padding: 0;
+			  margin: 0;
+			  list-style: none;
+			}
+
+			/* Footer styles */
+			.top-footer {
+			  background-color: #7a7a7a;
+			  color: #fff;
+			  padding: 20px;
+			  font-family: Arial, sans-serif;
+			  display: flex;
+			  justify-content: space-between;
+			  align-items: center;
+			  clear: both
+			}
+
+			.bottom-footer {
+			  background-color: #232323;
+			  color: #fff;
+			  padding: 20px;
+			  font-family: Arial, sans-serif;
+			  display: flex;
+			  justify-content: space-between;
+			  align-items: center;
+			}
+
+			.bottom-footer ul {
+			  display: flex;
+			  flex-wrap: wrap;
+			}
+
+			.bottom-footer li {
+			  margin-right: 20px;
+			  margin-bottom: 0;
+			}
+
+			.bottom-footer a{	
+				text-decoration: none;
+				color: #fff;
+				padding: 30px;
+			}
+						
+			.social-icons {
+			  list-style: none;
+			  padding: 0;
+			  margin: 0;
+			  display: flex;
+			  justify-content: center;
+			}
+
+			.social-icons li {
+			  margin: 0 10px;
+			}
+
+			.social-icons img {
+			  width: 40px;
+			  height: 40px;
+			}			
+			
+			/* Slideshow Container */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (adjust as needed) */
+  overflow: hidden;
+}
+
+/* Slide */
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Video Container */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
