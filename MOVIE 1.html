@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Movie Subpage</title>
+		<link rel ="stylesheet" type ="text/css" href ="Warner_Bros.css"/>
+	</head>
+	
+		 <style>
+		  article{
+					position: flex;
+			}
+			
+			article section {
+				  height: 15%;
+				  color: #fff;
+				  text-align: center;
+				  padding: 1% 1% 1% 1%;
+				  margin: 20px 20px;
+				  background:  #1B1212;
+				  border: solid 1px #000000;
+				  z-index: -1;
+				  display: flex;
+				  justify-content: center;
+				  align-items: center;
+				  
+			}
+			
+			article section p{
+				margin-top: 0;
+			}
+			
+			.imagecontainer{
+			  position: relative;
+			  top: 10%; 
+			  left: 10%;
+			  transform: translate(-10%, -10%);
+			}
+			.movie-player {
+			  height: 50%;
+			  width: 100%;
+			}
+			
+			.recommendation-container {
+			  position: fixed;
+			  bottom: 20px;
+			  right: 20px;
+			  text-align: right;
+			}
+			.recommendation-image {
+			  width: 200px;
+			  height: auto;
+			  margin-bottom: 10px;
+			}
+	
+		  </style>
+	
+	<body>
+	
+		<header>
+				<button class="language">Language</button>
+					<form class="search">
+					  <label>
+						<input type="text" placeholder="Search...">
+					  </label>
+					  <button type="submit">Search</button>
+					</form>
+				<div class="login-signup">
+				  <a href="#">Login</a>
+				  <button>Sign up</button>
+				</div>
+		</header>
+		
+		
+		
+		<ul class="menu cf">
+			<li><a href="HOMEPAGE.html">Home</a></li>
+			<li>
+				<a href="MOVIE.html">Movies</a>
+					<ul class="submenu">
+						<li><a href=>Featured</a> </li>
+						<li><a href=>Coming Soon</a> </li>
+						<li><a href=>New Releases</a> </li>
+						<li><a href=>Movies A-z</a> </li>
+						<li><a href=>Genres</a> </li>
+					</ul>
+			</li>
+			<li>
+				<a href="TV SHOWS.html">TV SHOWS</a>
+					<ul class="submenu">
+						<li><a href=>Featured</a> </li>
+						<li><a href=>On-going</a> </li>
+						<li><a href=>Upcoming</a> </li>
+						<li><a href=>Series A-Z</a> </li>
+						<li><a href=>Genres</a> </li>
+					</ul>
+			</li>
+			<li>
+				<a href="GAMES.html">GAMES</a>
+					<ul class="submenu">
+						<li><a href=>Upcoming</a> </li>
+						<li><a href=>PC Games</a> </li>
+						<li><a href=>Mobile Games</a> </li>
+						<li><a href=>Console Games</a> </li>
+						<li><a href=>Community and Support</a> </li>
+					</ul>
+			</li>
+			<li>
+				<a href="SHOP.html">SHOP</a>
+					<ul class="submenu">
+						<li><a href=>New Arrivals</a> </li>
+						<li><a href=>Collectables</a> </li>
+						<li><a href=>Toys</a> </li>
+						<li><a href=>Digital Products</a> </li>
+					</ul>
+			</li>
+		</ul>
+		
+		
+		<article>
+			<section>
+				<div class="movie-player" >
+					<video id="video-player" controls>
+					  <source src="The.School.for.Good.and.Evil.mkv" type="video/mp4">
+					</video>
+			    </div>
+			</section>
+			
+			<section style="width: 250px; height: 300px; float: left;">
+				<figure class= "imagecontainer">
+					<img src="The for Good and Evil.jpg" alt="The School for Good and Evil" style="width: 120px; height: 140px;">
+				</figure>	
+			</section>
+
+			<section style="width: 250px; height: 150px; float: right;">
+			  <h2>You may also like this:</h2>
+				<div class="recommendation-container">
+				  <img id="recommendation1" class="recommendation-image" src="pirates_of_the_caribbean.jpg" alt="Pirates of the Caribbean"> 
+				</div>
+			</section>
+			
+			<section style="width: 250px; height: 150px; float: right;">
+				<div class="recommendation-container">
+				  <img id="recommendation2" class="recommendation-image" src="how_to_train_your_dragon.jpg" alt="How to Train Your Dragon">
+				</div>
+			</section>
+			
+			<script>
+			  function toggleDescription() {
+				var description = document.getElementById("about-description");
+				var button = document.getElementById("toggle-button");
+
+				if (description.style.maxHeight) {
+				  description.style.maxHeight = null;
+				  button.innerHTML = "Read More";
+				} else {
+				  description.style.maxHeight = "200px";
+				  button.innerHTML = "Read Less";
+				}
+			  }
+			</script>
+			
+			  <script>
+			  
+			  
+			  
+				// JavaScript code to load the movie details dynamically
+				const movieTitleElement = document.getElementsByTagName('h1')[0];
+				const releaseDateElement = document.getElementById('release-date');
+				const directorElement = document.getElementById('director');
+				const genreElement = document.getElementById('genre');
+				const videoSourceElement = document.getElementById('video-source');
+
+				movieTitleElement.innerText = "The School of Good and Evil";
+				releaseDateElement.innerText = "2023-05-10";
+				directorElement.innerText = "Director Name";
+				genreElement.innerText = "Fantasy, Adventure";
+
+				// Replace 'school_of_good_and_evil.mp4' with the actual filename of the movie
+				const movieURL = 'school_of_good_and_evil.mp4';
+				videoSourceElement.setAttribute('src', movieURL);
+
+				// Add code to initialize and control the movie player
+				const videoPlayer = document.getElementById('video-player');
+				videoPlayer.load(); // Load the video
+				videoPlayer.play(); // Play the video
+
+			  </script>
+		</article>
+	</body>
+</html>
