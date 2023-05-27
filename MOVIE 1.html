@@ -13,7 +13,7 @@
 			article section {
 				  height: 15%;
 				  color: #fff;
-				  text-align: center;
+				  text-align: right;
 				  padding: 1% 1% 1% 1%;
 				  margin: 20px 20px;
 				  background:  #1B1212;
@@ -26,13 +26,14 @@
 			}
 			
 			article section p{
-				margin-top: 0;
+				margin-top: 6%;
+				margin-left: 6%;
 			}
 			
 			.imagecontainer{
 			  position: relative;
-			  top: 10%; 
-			  left: 10%;
+			  top: 15%; 
+			  left: 15%;
 			  transform: translate(-10%, -10%);
 			}
 			.movie-player {
@@ -40,18 +41,9 @@
 			  width: 100%;
 			}
 			
-			.recommendation-container {
-			  position: fixed;
-			  bottom: 20px;
-			  right: 20px;
-			  text-align: right;
-			}
-			.recommendation-image {
-			  width: 200px;
-			  height: auto;
-			  margin-bottom: 10px;
-			}
-	
+			.about-content {
+      margin-top: 20px;
+    }
 		  </style>
 	
 	<body>
@@ -123,27 +115,23 @@
 					  <source src="The.School.for.Good.and.Evil.mkv" type="video/mp4">
 					</video>
 			    </div>
-			</section>
+			</section>	
 			
-			<section style="width: 250px; height: 300px; float: left;">
-				<figure class= "imagecontainer">
-					<img src="The for Good and Evil.jpg" alt="The School for Good and Evil" style="width: 120px; height: 140px;">
-				</figure>	
-			</section>
+			<section>
+			  <div class="movie-details">
+				<img src="The for Good and Evil.jpg" alt="The School for Good and Evil" style="width: 15%; height: 15%; float: left;">
+				<div class="movie-description">
+					  <h1>The School for Good and Evil</h1>
+					  <p id="about-description"> The School for Good and Evil" is a captivating fantasy film based on the best-selling book series by Soman Chainani. The story follows two young girls, Sophie and Agatha, who are unexpectedly whisked away to the extraordinary School for Good and Evil, where ordinary children are trained to become fairy tale heroes and villains.
 
-			<section style="width: 250px; height: 150px; float: right;">
-			  <h2>You may also like this:</h2>
-				<div class="recommendation-container">
-				  <img id="recommendation1" class="recommendation-image" src="pirates_of_the_caribbean.jpg" alt="Pirates of the Caribbean"> 
+					Sophie, with her charming personality and love for all things pink and pretty, believes she is destined for the School for Good. On the other hand, Agatha, with her dark attire and skeptical nature, assumes she will be enrolled in the School for Evil. However, to their surprise, Sophie finds herself in the School for Evil, while Agatha ends up in the School for Good.
+
+					As the two girls navigate their way through the magical school, they face numerous challenges, including unraveling mysteries, forming unlikely alliances, and discovering the true meaning of friendship and self-identity. With the help of quirky classmates, magical creatures, and wise mentors, Sophie and Agatha embark on a thrilling adventure to uncover the secrets of the school and ultimately rewrite their own fairy tale destinies.
+
+					"The School for Good and Evil" is a visually stunning and emotionally engaging film that explores themes of friendship, identity, and the blurred lines between good and evil. It offers a fresh and imaginative take on traditional fairy tales, captivating audiences of all ages with its enchanting story and thought-provoking messages. </p>
+					  <button onclick="toggleDescription()" id="toggle-button">Read More</button>
 				</div>
-			</section>
-			
-			<section style="width: 250px; height: 150px; float: right;">
-				<div class="recommendation-container">
-				  <img id="recommendation2" class="recommendation-image" src="how_to_train_your_dragon.jpg" alt="How to Train Your Dragon">
-				</div>
-			</section>
-			
+
 			<script>
 			  function toggleDescription() {
 				var description = document.getElementById("about-description");

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> WARNER BROS</title>
+	</head>
+	
+	<style>
+	
+		body{
+			margin: 0% 10%;
+			background-color: #58330a;
+			padding: 0% 2%;
+			
+		}
+		header{
+			width: 100%;
+			height: 150px;
+			background-color: ;
+			text-align: right;
+			margin: 0px 5px
+		}
+		header h1{
+			text-align: left;
+		}
+		nav {
+		  background-color: #d4e3fc;
+		  overflow: hidden;
+		}
+
+		nav ul {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		}
+
+		nav li {
+		  float: left;
+		}
+
+		nav li a {
+		  display: block;
+		  padding: 16px;
+		  color: #333;
+		  text-align: center;
+		  text-decoration: none;
+		}
+
+		nav li a:hover {
+		  background-color: #ddd;
+		}
+
+		nav h1{
+			dispaly: inline;
+			align: center;
+			width: 10%;
+			background: grey;
+			margin-left: 3px
+		}
+		 aside, article{
+			margin-bottom: 10px;
+		 }
+		aside{
+			float: left;
+			width: 20%;
+			background: grey;
+		}
+		article img {
+			vertical-align: middle;
+			width: 150px;
+			height: 150px;
+			margin-left: 40px;
+			border-radius: 100%;
+		}
+		article{
+			float: right;
+			width: 70%;
+			background:grey;
+		}
+		
+		footer{
+			clear: both;
+			background: grey;
+		}
+	
+	</style>
+	<body>
+		<header>
+			<h1>My Movie Website</h1>
+			<nav>
+				<ul>
+					<li><a href="HOMEPAGE.html">HOME</a></li>
+					<li><a href="MOVIE PAGE.html">MOVIE</a></li>
+					<li><a href="TV SHOWS.html">TV SHOWS</a></li>
+					<li><a href="GAMES.html">GAMES</a></li>
+					<li><a href="SHOP.html">SHOP</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<main>
+			<section>
+				<h2>Featured Movie</h2>
+				<article>
+					<h3>The Avengers</h3>
+					<img src="https://via.placeholder.com/300x450" alt="The Avengers">
+					<p>The Avengers is a 2012 American superhero film based on the Marvel Comics superhero team of the same name. The film features an ensemble cast including Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, and Jeremy Renner.</p>
+					<a href="#">Read More</a>
+				</article>
+			</section>
+			
+			<section>
+				<h2>Latest Movies</h2>
+				<ul>
+					<li>
+						<h3>Spider-Man: No Way Home</h3>
+						<img src="https://via.placeholder.com/150x225" alt="Spider-Man: No Way Home">
+						<p>Spider-Man: No Way Home is a 2021 American superhero film based on the Marvel Comics character Spider-Man, co-produced by Columbia Pictures and Marvel Studios, and distributed by Sony Pictures Releasing.</p>
+						<a href="#">Read More</a>
+					</li>
+					<li>
+						<h3>The Matrix Resurrections</h3>
+						<img src="https://via.placeholder.com/150x225" alt="The Matrix Resurrections">
+						<p>The Matrix Resurrections is a 2021 American science fiction action film directed by Lana Wachowski, who co-wrote the screenplay with David Mitchell and Aleksandar Hemon, and produced by Wachowski and Grant Hill.</p>
+						<a href="#">Read More</a>
+					</li>
+					<li>
+						<h3>Black Panther: Wakanda Forever</h3>
+						<img src="https://via.placeholder.com/150x225" alt="Black Panther: Wakanda Forever">
+						<p>Black Panther: Wakanda Forever is an upcoming American superhero film based on the Marvel Comics character Black Panther. The film is directed by Ryan Coogler and stars Letitia Wright, Lupita Nyong'o, Winston Duke, and Danai Gurira.</p>
+						<a href="#">Read More</a>
+					</li>
+				</ul>
+			</section>
+		</main>
+		
+		<footer>
+			<p>&copy; 2023 My Movie Website</p>
+		</footer>
+</body>
+</html>
+
+	
+	</body>
+
+</html>
