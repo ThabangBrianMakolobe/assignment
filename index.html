@@ -6,89 +6,64 @@
 		<link rel ="stylesheet" type ="text/css" href ="Warner_Bros.css"/>
 	</head>
 	
-		<style>
+	<style>
 			
-			.slideshow-container {
-				  position: relative;
-				  height: 300px;
-				  width: 50%;
-				  overflow: hidden;
-				  margin: 0 auto; /* Center horizontally */
+			article {
+			  display: flex;
+			  flex-wrap: wrap;
+			  justify-content: center;
+			  align-items: center;
+			  height: 70%;
+			  background: #1B1212;
+			  color: #fff;
 			}
 
-			.slide {
-				  position: absolute;
-				  width: 100%;
-				  height: 100%;
-				  opacity: 0;
-				  transition: opacity 1s ease-in-out;
+			figure {
+			  display: inline-block;
+			  text-align: center;
+			  margin: 0;
+			  padding: 0;
 			}
 
-			.slide.active {
-				opacity: 1;
-			}
-			article{
-					position: flex;
-			}
-			
-			article section {
-				  height: 30%;
-				  color: #fff;
-				  text-align: center;
-				  padding: 3% 3%;
-				  margin: 20px 15px 20px 15px;
-				  background: #1B1212;
-				  border: solid 1px #000000;
-				  z-index: -1;
-				  display: flex;
-				  justify-content: center;
-				  align-items: center;
-			}
-			
-			article section figure {
-				margin: 10px 10px;
-				padding: 0px 2px;
-				display: inline-block;
-			}
-			
-			article section figure img{
-				width: 280px;
-				height: 210px;
-				display: block;
-				margin-left: 50px;
+			article figure img {
+			  width: 210px;
+			  height: 230px;
+			  margin: 0;
+			  padding: 6px;
 			}
 
-		</style>
-		
+			figcaption {
+			  margin: 10px 0 0;
+			}
+			figcaption a.caption-link {
+			  text-decoration: none;
+			  color: #fff; 
+			}
+
+
+	</style>
+	
 	<body>
-		
 		<header>
-		    <button class="language">Language</button>
-  <form class="search" action="tv-featured.html">
-
-			  <form class="search" action="TV FEATURED.html">
-				<label>
-				  <input type="text" placeholder="Search...">
-				</label>
-				
-				<button type="submit">Search</button>
-			  </form>
-			  
-		  <div class="login-signup">
-			<a href="#">Login</a>
-			<button>Sign up</button>
-		  </div>
-	</header>
-
-		
-		
+				<button class="language">Language</button>
+					<form class="search">
+					  <label>
+						<input type="text" placeholder="Search...">
+					  </label>
+					  <button type="submit">Search</button>
+					</form>
+				<div class="login-signup">
+				  <a href="#">Login</a>
+				  <button>Sign up</button>
+				</div>
+		</header>
 		
 		<ul class="menu cf">
 			<li><a href="HOMEPAGE.html">Home</a></li>
-			<li>
+			<<li>
 				<a href="MOVIE.html">Movies</a>
 					<ul class="submenu">
-						<li><a href=>Featured</a> </li>
+						<li><a href="MOVIE FEATURED.html">Featured A-z</a> </li>
 						<li><a href=>Coming Soon</a> </li>
 						<li><a href=>New Releases</a> </li>
 						<li><a href=>Movies A-z</a> </li>
@@ -98,11 +73,9 @@
 			<li>
 				<a href="TV SHOWS.html">TV SHOWS</a>
 					<ul class="submenu">
-						<li><a href=>Featured</a> </li>
+						<li><a href="TV FEATURED.html">Featured A-Z</a> </li>
 						<li><a href=>On-going</a> </li>
 						<li><a href=>Upcoming</a> </li>
-						<li><a href=>Series A-Z</a> </li>
-						<li><a href=>Genres</a> </li>
 					</ul>
 			</li>
 			<li>
@@ -124,58 +97,182 @@
 						<li><a href=>Digital Products</a> </li>
 					</ul>
 			</li>
-		</ul>
+		</ul>	
 		
-		<article>
-
-			</section>
-			<h1>COMINNG SOON</h1>
-				<section>			 
+		<h1>COMINNG SOON</h1>
+		<article style= " height: 70%;">
+						 
 					<figure>
 						<img src="aquaman.jpg" alt="Aquaman">
-						<caption> Aquaman </caption>
+						<figcaption> Aquaman </figcaption>
 					</figure>
 					
 					<figure>
 						<img src="flash.jpg" alt="The Flash">
-						<caption> The Flash </caption>
+						<figcaption> The Flash </figcaption>
 					</figure>
 
 					<figure>
 						<img src="nun.jpg" alt="The Nun">
-						<caption> The NUN </caption>
+						<figcaption> The NUN </figcaption>
 					</figure>
 
 					<figure>
 						<img src="dune.jpg" alt="Dune">
-						<caption> DUNE </caption>
-					</figure>
-				</section>
-				
-			
-			<h1>FAVOURITES</h1>
-				<section>
+						<figcaption> DUNE </figcaption>
+					</figure>					
+					
 					<figure>
+						<img src="MC9.WARPONY.jpg" alt="War Pony">
+						<figcaption> War Pony </figcaption>
+					</figure>
+					
+					<figure>
+						<img src="MC8.TRANSFORMERS.jpg" alt="Tranformers: Rise of the Beasts">
+						<figcaption> Tranformers: Rise of the Beasts </figcaption>
+					</figure>
+					
+					<figure>
+						<img src="MC7.ELEMENTAL.jpg"  alt="Elemental">
+						<figcaption> Elemental </figcaption>
+					</figure>
+
+					<figure>
+						<img src="MC5.FULLTIME.jpg"  alt="Full Time" >
+						<figcaption> Full Time </figcaption>
+					</figure>
+					
+					<figure>
+						<img src="MC4.INLANDEMPIRE.jpg"  alt="Inland Empire" >
+						<figcaption> Inland Empire </figcaption>
+					</figure>
+					
+					<figure>
+						<img src="MC3.Aboutmyfather.jpg"  alt=" About my Father" >
+						<figcaption> About my Father </figcaption>
+					</figure>
+					
+					<figure>
+						<img src="MC1.jpg"  alt="The Little Mermaid" >
+						<figcaption> The Little Mermaid </figcaption>
+					</figure>
+					
+					<figure>
+						<img src="MC2.Hypnotic.jpg" alt="Hypnotic" >
+						<figcaption>Hypnotic  </figcaption>
+					</figure>
+					
+		</article>	
+		
+		<h1>FAVOURITES</h1>
+		<article>		
+					<figure>
+						<img src="FAST X.gif" alt="Fast X">
+						<figcaption> Fast X</figcaption>
+					</figure>
+					<figure>
+					  <a href="MOVIE 1.html">
+						<img src="THE SCHOOL FOR GOOD AND AND EVIL.gif" alt="The School for good and Evil">
+						<figcaption>
+						  <a href="MOVIE 1.html" class="caption-link"> The School for Good and Evil</a>
+						</figcaption>
+					  </a>
+					</figure>
+			
+					<figure>
+						<img src="INCEPTION.gif"alt="Inception">
+						<figcaption> Inception </figcaption>
+					</figure>
+					
+					<figure>
+						<img src="TOKYO DRIFT.gif" alt="Fast and Furious: Tokyo Drift">
+						<figcaption> Fast and Furious: Tokyo Drift</figcaption>	
+					</figure>
+					
+					<figure>
+						<img src="PACIFIC.gif" alt="PacificRim">
+						<figcaption> Pacific Rim </figcaption>	
+					</figure>
+					
+					<figure>
+						<img src="BATMAN.gif" alt="Batman">
+						<figcaption> Batman </figcaption>
+					</figure>
+
+					<figure>
+						<img src="TERMINATOR.gif" alt="Terminator">
+						<figcaption> Terminator </figcaption>
+					</figure>	
+					
+					<figure>
+						<img src="the hobbit.gif" alt="The Hobbit">
+						<figcaption> The Hobbit </figcaption>
+					</figure>
+					
+					<figure>
+						<img src="TOMB RAIDER.gif" alt="Tomb Raider">
+						<figcaption> Tomb Raider</figcaption>	
+					</figure>
+					
+					
+					<figure>
+						<img src="GODZILLA.gif" alt="Godzilla: King of Monsters">
+						<figcaption> Godzilla: King Of Monsters </figcaption>	
+					</figure>
+					
+					<figure>
+						<img src="FAST.gif" alt="Fast and Furious">
+						<figcaption> Fast and Furious </figcaption>	
+					</figure>
+					
+					<figure>
+						<img src="NUN.gif" alt="The NUN">
+						<figcaption> The NUN </figcaption>	
+					</figure>
+					
+		</article>
+
+		<h1> FEATURED </h1>
+		<article>			
+				<figure>
 						<img src="fast and furious.gif" alt="Fast & Furious">
-						<caption> Fast & Furious </caption>
+						<figcaption> Fast & Furious </figcaption>
 					</figure>
 
 					<figure>
 						<img src="harry potter.gif" alt="Harry Potter">
-						<caption> Harry Potter </caption>
+						<figcaption> Harry Potter </caption>
 					</figure>	
 					
 					<figure>
 						<img src="anime.gif"alt="Animation">
-						<caption> Animation </caption>
+						<figcaption> Animation </figcaption>
 					</figure>
 					
 					<figure>
 						<img src="kong vs godzilla.gif" alt="Kong vs Godzilla">
-						<caption> Kong and Godzilla </caption>	
+						<figcaption> Kong and Godzilla </figcaption>	
 					</figure>
-				</section>
-			
+					
+					<figure>
+						<img src="fast and furious.gif" alt="Fast & Furious">
+						<figcaption> Fast & Furious </figcaption>
+					</figure>
+
+					<figure>
+						<img src="harry potter.gif" alt="Harry Potter">
+						<figcaption> Harry Potter </figcaption>
+					</figure>	
+					
+					<figure>
+						<img src="anime.gif"alt="Animation">
+						<figcaption> Animation </figcaption>
+					</figure>
+					
+					<figure>
+						<img src=alt="Kong vs Godzilla">
+						<figcaption> Kong and Godzilla </figcaption>	
+					</figure>
 		</article>
 		
 		<footer class="top-footer">
@@ -199,7 +296,8 @@
 			<li><a href="#">Disclosure Ads</a></li>
 		  </ul>
 		</footer>
-
+		
+	
 	</body>
-
+	
 </html>
